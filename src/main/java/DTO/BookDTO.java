@@ -29,6 +29,12 @@ public class BookDTO {
         this.bookPrice = bookPrice;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "BookDTO{" +
+                "bookId=" + bookId +
+                ", bookName='" + bookName + '\'' +
+                ", bookPrice=" + bookPrice +
+                '}';
+    }
 }

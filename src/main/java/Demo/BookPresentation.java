@@ -3,6 +3,7 @@ package Demo;
 import DAO.BookDAO;
 import DTO.BookDTO;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -32,8 +33,12 @@ public class BookPresentation {
     }
 
     private static void viewBooks() {
-        BookDAO b1=new BookDAO();
-        b1.viewBook();
+        BookDAO b1=new  BookDAO();
+        ArrayList<BookDTO> data= b1.viewBook();
+        for (BookDTO data1:data
+             ) {
+            System.out.println(data1);
+        }
 
     }
 
